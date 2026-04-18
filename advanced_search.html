@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>uAdvanced</title>
+        <link rel="stylesheet" href="index.css">
+        <style>
+            .input3 {
+                height: 30px;
+                border: 1px solid #747474;
+                
+            }
+            .input4 {
+                width: 150px;
+                height: 30px;
+                font-size: 15px;
+                border : 2px;
+                justify-self: right;
+                background-color: #8ab4f8;
+            }
+            #grid {
+                display: grid;
+                padding-left: 40px;
+                grid-column-gap: 20px;
+                grid-row-gap: 15px;
+                grid-template-columns: 200px minmax(200px, 600px);
+            }
+            .grid-item-text {
+                font-size: 14px;
+                align-self: center;
+                color: #747474;
+            }
+            h3 {
+                color: #f28b82;
+                padding-left: 40px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div style="padding-top: 15px; padding-bottom: 30px;">
+            <span style="float: left;">
+                <img src="figures/logo.png" alt="google" width="70">
+            </span>
+            <span style="float: right;">
+                <a href="index.html">Google search</a>
+                &nbsp;&nbsp;
+                <a href="image_search.html">Image search</a>
+                &nbsp;
+            </span>
+        </div>
+        <hr style="border: none; border-top: 1px solid #747474;">
+        <h3>Advanced search</h3>
+        <hr style="border: none; border-top: 1px solid #747474;">
+        <div style="padding-top: 30px;">
+            <form action="https://www.google.com/search">
+                <div id="grid">
+                    <div style="font-size: 16px; height: 20px;">Find pages with...</div>
+                    <div></div>
+
+                    <div class="grid-item-text">all these words:</div>
+                    <input class="input3" type="text" name="as_q">
+                   
+                    <div class="grid-item-text">this exact word or phrase:</div>
+                    <input class="input3" type="text" name="as_epq">
+
+                    <div class="grid-item-text">any of these words:</div>
+                    <input class="input3" type="text" name="as_oq">
+                    
+                    <div class="grid-item-text">none of these words:</div>
+                    <input class="input3" type="text" name="as_eq">
+
+                    <div></div>
+                    <input class="input4" type="submit" value="Advanced search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
